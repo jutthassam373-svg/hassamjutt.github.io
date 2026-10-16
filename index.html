@@ -1,177 +1,93 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hassam Jutt | Official Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hassam Jutt | Official Website</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: #050505;
-            color: white;
-            font-family: Arial, sans-serif;
-            min-height: 100vh;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 8%;
-            border-bottom: 1px solid #222;
-        }
-
-        .logo {
-            color: #00ffff;
-            font-size: 25px;
-            font-weight: bold;
-            text-shadow: 0 0 15px #00ffff;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #00ffff;
-        }
-
-        .hero {
-            min-height: 75vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 30px 20px;
-        }
-
-        .hero p {
-            color: #00ffff;
-            letter-spacing: 4px;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: clamp(38px, 8vw, 75px);
-            margin-bottom: 20px;
-            text-shadow: 0 0 15px #00ffff;
-        }
-
-        .hero h2 {
-            color: #bbb;
-            font-size: 22px;
-            font-weight: normal;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 30px;
-            border: 2px solid #00ffff;
-            color: #00ffff;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #00ffff;
-            color: black;
-            box-shadow: 0 0 25px #00ffff;
-        }
-
-        section {
-            padding: 55px 20px;
-            text-align: center;
-        }
-
-        section h2 {
-            color: #00ffff;
-            margin-bottom: 20px;
-        }
-
-        section p {
-            color: #ccc;
-            line-height: 1.8;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            border-top: 1px solid #222;
-            color: #888;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            nav a {
-                margin: 0 7px;
-                font-size: 14px;
-            }
-        }
-    </style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{background:#050505;color:white;font-family:Arial,sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 8%;border-bottom:1px solid #222;position:sticky;top:0;background:#050505;z-index:10}
+.logo{color:#00ffff;font-size:23px;font-weight:bold;text-shadow:0 0 15px #00ffff}
+nav a{color:white;text-decoration:none;margin-left:18px}
+nav a:hover{color:#00ffff}
+.hero{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:35px 20px}
+.profile{width:190px;height:190px;object-fit:cover;border-radius:50%;border:4px solid #00ffff;box-shadow:0 0 25px #00ffff;margin-bottom:25px}
+.hero p{color:#00ffff;letter-spacing:4px;margin-bottom:18px}
+h1{font-size:clamp(38px,8vw,72px);margin-bottom:18px;text-shadow:0 0 18px #00ffff}
+.hero h2{color:#bbb;font-size:20px;font-weight:normal;margin-bottom:28px}
+.btn{display:inline-block;padding:13px 24px;border:2px solid #00ffff;color:#00ffff;text-decoration:none;border-radius:8px;margin:6px;transition:.3s}
+.btn:hover{background:#00ffff;color:black;box-shadow:0 0 25px #00ffff}
+section{padding:65px 20px;text-align:center}
+section h2{color:#00ffff;font-size:30px;margin-bottom:24px}
+section p{color:#ccc;line-height:1.9}
+.cards{display:flex;justify-content:center;flex-wrap:wrap;gap:18px;margin-top:25px}
+.card{width:250px;padding:25px;border:1px solid #00ffff;border-radius:12px;background:#0c0c0c;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 0 20px #00ffff}
+.card h3{color:#00ffff;margin-bottom:12px}
+.social{margin-top:20px}
+footer{text-align:center;padding:25px;border-top:1px solid #222;color:#888}
+@media(max-width:600px){header{flex-direction:column;gap:18px}nav a{margin:0 6px;font-size:13px}.profile{width:155px;height:155px}}
+</style>
 </head>
 
 <body>
+<header>
+  <div class="logo">HASSAM JUTT</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gaming">Gaming</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    <header>
-        <div class="logo">HASSAM JUTT</div>
+<div class="hero" id="home">
+  <img class="profile" src="Screenshot_20261015_202536.jpg" alt="Hassam Jutt ki photo">
+  <p>WELCOME TO MY WORLD</p>
+  <h1>HASSAM JUTT</h1>
+  <h2>Dream Big. Learn More. Build Your Future.</h2>
+  <a href="#about" class="btn">Explore My Website</a>
+</div>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#interests">Interests</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<section id="about">
+  <h2>About Me</h2>
+  <p>Welcome to my personal website!<br>
+  I am Hassam Jutt, learning technology, coding, AI and new digital skills.</p>
+</section>
 
-    <div class="hero" id="home">
-        <p>WELCOME TO MY WORLD</p>
-
-        <h1>HASSAM JUTT</h1>
-
-        <h2>Dream Big. Learn More. Build Your Future.</h2>
-
-        <a href="#about" class="btn">Explore My Website</a>
+<section id="gaming">
+  <h2>🎮 My Gaming Zone</h2>
+  <p>Gaming is one of my favourite interests!</p>
+  <div class="cards">
+    <div class="card">
+      <h3>GTA Vice City</h3>
+      <p>Explore the city, complete missions and enjoy the classic game.</p>
     </div>
+    <div class="card">
+      <h3>Technology</h3>
+      <p>Learning about computers, apps and digital tools.</p>
+    </div>
+    <div class="card">
+      <h3>Coding & AI</h3>
+      <p>Building new things and exploring artificial intelligence.</p>
+    </div>
+  </div>
+</section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my personal website!<br>
-        I am Hassam Jutt, and I am learning about technology,
-        coding, and new digital skills.</p>
-    </section>
+<section id="contact">
+  <h2>Connect With Me</h2>
+  <p>Welcome to my digital world!</p>
+  <div class="social">
+    <!-- Add your real profile links below when ready -->
+    <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a class="btn" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+  </div>
+</section>
 
-    <section id="interests">
-        <h2>My Interests</h2>
-        <p>Gaming | Technology | Coding | AI</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Welcome to my digital world!</p>
-    </section>
-
-    <footer>
-        © 2026 Hassam Jutt | All Rights Reserved
-    </footer>
-
+<footer>
+  © 2026 Hassam Jutt | All Rights Reserved
+</footer>
 </body>
 </html>
-```
-
